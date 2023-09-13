@@ -141,31 +141,31 @@ diag_table:
         fields:
             age_global:
             # aiso_bih:
-            buoyfreq2_wt:
+            # buoyfreq2_wt:
             diff_cbt_t:
-            dzt:  # potentially calculable from other fields - https://github.com/COSIMA/access-om2/issues/203#issuecomment-635752170
+            # dzt:  # potentially calculable from other fields - https://github.com/COSIMA/access-om2/issues/203#issuecomment-635752170
             pot_rho_0:
             pot_rho_2:
-            pot_temp:
+            # pot_temp:
             salt:
-            temp_xflux_adv:
-            temp_yflux_adv:
+            # temp_xflux_adv:
+            # temp_yflux_adv:
             temp:
             # tx_trans_gm:
             # tx_trans_nrho_submeso:
             # tx_trans_rho_gm:
             # tx_trans_rho:
             # tx_trans_submeso:
-            tx_trans:
-            ty_trans_gm:
+            # tx_trans:
+            # ty_trans_gm:
             ty_trans_nrho_submeso:
             ty_trans_rho_gm:
             ty_trans_rho:
-            ty_trans_submeso:
-            ty_trans:
+            # ty_trans_submeso:
+            # ty_trans:
             u:
             v:
-            vert_pv:
+            # vert_pv:
             # vorticity_z:
             wt:
     'monthly 3d squared fields':  # for calculating EKE etc
@@ -246,14 +246,14 @@ diag_table:
             output_freq: 1  # integer: output sampling frequency in output_freq_units (0: every timestep; -1: only at end of run)
             output_freq_units: days  # time units for output: years, months, days, hours, minutes, or seconds
         fields:
-            bottom_temp:
-            frazil_3d_int_z:
+            # bottom_temp:
+            # frazil_3d_int_z:
             mld:
             pme_river:
             sea_level:
-            sfc_hflux_coupler:
-            sfc_hflux_from_runoff:
-            sfc_hflux_pme:
+            # sfc_hflux_coupler:
+            # sfc_hflux_from_runoff:
+            # sfc_hflux_pme:
             surface_pot_temp:
             surface_salt:
             usurf:
@@ -265,8 +265,8 @@ diag_table:
             output_freq_units: days  # time units for output: years, months, days, hours, minutes, or seconds
             reduction_method: max  # mean, snap, rms, pow##, min, max, or diurnal##
         fields:
-            bottom_temp:
-            sea_level:
+            # bottom_temp:
+            # sea_level:
             surface_pot_temp:
     'daily 2d minimum fields':
         defaults:  # these can be overridden for individual fields below
