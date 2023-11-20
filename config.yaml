@@ -15,14 +15,14 @@ jobname: 025deg_era5_ryf
 # Model configuration
 name: common
 model: access-om2
-input: /g/data/e14/rmh561/access-om2/input/ERA-5/remap/prod
+input: /g/data/ik11/inputs/ERA5/input/remap
 submodels:
     - name: atmosphere
       model: yatm
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_70e2c46.exe
       input:
             - /g/data/ik11/inputs/access-om2/input_20201102/yatm_025deg
-            - /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/chunked
+            - /g/data/ik11/inputs/ERA5/input/RYF
       ncpus: 1
 
     - name: ocean
@@ -33,7 +33,7 @@ submodels:
 
     - name: ice
       model: cice5
-      exe: /g/data/e14/rmh561/access-om2/bin/cice_auscom_1440x1080_480p_1a98130_libaccessom2_70e2c46.exe
+      exe: /g/data/ik11/inputs/ERA5/bin/cice_auscom_1440x1080_480p_1a98130_libaccessom2_70e2c46.exe
       input: /g/data/ik11/inputs/access-om2/input_20201102/cice_025deg
       ncpus: 361
 
